@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>404 - Page Not Found | BigStore</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Explore BigStore's premium social media growth services - followers, likes, and engagement.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://bigstorept.store/">
+    
+    <!-- Hreflang Tags for International SEO -->
+    <link rel="alternate" hreflang="en" href="https://bigstorept.store/404.html">
+    <link rel="alternate" hreflang="pt" href="https://bigstorept.store/404.html">
+    <link rel="alternate" hreflang="x-default" href="https://bigstorept.store/404.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Page Not Found - BigStore">
+    <meta property="og:description" content="Explore our premium social media services">
+    <meta property="og:url" content="https://bigstorept.store/">
+    <meta property="og:site_name" content="BigStore">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Page Not Found - BigStore">
+    <meta name="twitter:description" content="Explore our premium social media services">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "404 Error Page",
+        "description": "Page not found - BigStore",
+        "url": "https://bigstorept.store/404.html",
+        "inLanguage": ["en", "pt"],
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "BigStore",
+            "url": "https://bigstorept.store/"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://bigstorept.store/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "404 Error"
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0f0f1e;
+            --bg-secondary: #1a1a2e;
+            --accent: #6c63ff;
+            --accent-hover: #5a52d5;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0c8;
+            --card-bg: #16162a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Breadcrumb Navigation */
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 0 auto 20px;
+            padding: 10px 0;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .breadcrumb a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--accent-hover);
+        }
+
+        .breadcrumb span {
+            margin: 0 8px;
+        }
+
+        /* Main Container */
+        .error-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 200px);
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 700px;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent) 0%, #9d8cff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 40px;
+        }
+
+        .icon {
+            font-size: 80px;
+            margin-bottom: 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent) 0%, #9d8cff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        .error-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .error-message {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 10px 30px rgba(108, 99, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(108, 99, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* Footer Links */
+        .footer-links {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid rgba(108, 99, 255, 0.1);
+            color: var(--text-secondary);
+        }
+
+        .footer-links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-hover);
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 80px;
+            }
+
+            .error-title {
+                font-size: 28px;
+            }
+
+            .error-message {
+                font-size: 16px;
+            }
+
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .links-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/" id="breadcrumbHome">Home</a>
+        <span>›</span>
+        <span id="breadcrumbCurrent">404 Error</span>
+    </nav>
+
+    <div class="error-wrapper">
+        <!-- Main Error Section -->
+        <div class="error-container">
+            <div class="logo">BigStore</div>
+            <div class="icon" aria-hidden="true">🔍</div>
+            <div class="error-code" aria-label="Error 404">404</div>
+            <h1 class="error-title" id="errorTitle">Page Not Found</h1>
+            <p class="error-message" id="errorMessage">
+                Oops! The page you're looking for doesn't exist. It might have been moved or deleted. Don't worry, we can help you find what you need!
+            </p>
+            <div class="btn-container">
+                <a href="/" class="btn btn-primary" id="homeBtn" aria-label="Go to homepage">Back to Home</a>
+                <a href="/#products" class="btn btn-secondary" id="productsBtn" aria-label="View our products">View Products</a>
+            </div>
+        </div>
+
+    <!-- Footer Links -->
+    <footer class="footer-links">
+        <a href="/" id="footerHome">Home</a>
+        <a href="/#products" id="footerProducts">Products</a>
+        <a href="/contact" id="footerContact">Contact</a>
+    </footer>
+
+    <script>
+        // Language Detection and Translation
+        const userLang = navigator.language || navigator.userLanguage;
+        const isPT = userLang.toLowerCase().startsWith('pt');
+
+        const translations = {
+            en: {
+                breadcrumbHome: 'Home',
+                breadcrumbCurrent: '404 Error',
+                errorTitle: 'Page Not Found',
+                errorMessage: "Oops! The page you're looking for doesn't exist. It might have been moved or deleted. Don't worry, we can help you find what you need!",
+                homeBtn: 'Back to Home',
+                productsBtn: 'View Products',
+                popularTitle: 'Popular Pages',
+                linkHome: 'Home',
+                linkHomeDesc: 'Main page',
+                linkInstagram: 'Instagram',
+                linkInstagramDesc: 'Followers & Likes',
+                linkTiktok: 'TikTok',
+                linkTiktokDesc: 'Views & Engagement',
+                linkYoutube: 'YouTube',
+                linkYoutubeDesc: 'Subscribers & Views',
+                linkSupport: 'Support',
+                linkSupportDesc: '24/7 Help',
+                footerHome: 'Home',
+                footerProducts: 'Products',
+                footerContact: 'Contact'
+            },
+            pt: {
+                breadcrumbHome: 'Início',
+                breadcrumbCurrent: 'Erro 404',
+                errorTitle: 'Página Não Encontrada',
+                errorMessage: 'Ops! A página que você está procurando não existe. Ela pode ter sido movida ou excluída. Não se preocupe, podemos ajudá-lo a encontrar o que precisa!',
+                homeBtn: 'Voltar ao Início',
+                productsBtn: 'Ver Produtos',
+                popularTitle: 'Páginas Populares',
+                linkHome: 'Início',
+                linkHomeDesc: 'Página principal',
+                linkInstagram: 'Instagram',
+                linkInstagramDesc: 'Seguidores e Likes',
+                linkTiktok: 'TikTok',
+                linkTiktokDesc: 'Views e Engagement',
+                linkYoutube: 'YouTube',
+                linkYoutubeDesc: 'Inscritos e Views',
+                linkSupport: 'Suporte',
+                linkSupportDesc: 'Ajuda 24/7',
+                footerHome: 'Início',
+                footerProducts: 'Produtos',
+                footerContact: 'Contacto'
+            }
+        };
+
+        function applyTranslations(lang) {
+            const t = translations[lang];
+            Object.keys(t).forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    if (element.tagName === 'INPUT') {
+                        element.placeholder = t[key];
+                    } else {
+                        element.textContent = t[key];
+                    }
+                }
+            });
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+        }
+
+        if (isPT) {
+            applyTranslations('pt');
+        }
+
+        // Track 404 Error in Google Analytics (if available)
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_not_found', {
+                'page_location': window.location.href,
+                'page_path': window.location.pathname,
+                'page_title': '404 - Page Not Found'
+            });
+        }
+
+        // Log 404 for debugging (can be sent to your analytics)
+        console.info('404 Error:', {
+            url: window.location.href,
+            referrer: document.referrer,
+            timestamp: new Date().toISOString()
+        });
+    </script>
+</body>
+</html>

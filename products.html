@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Products - Premium Social Media Services | BigStore</title>
+    <meta name="description" content="Browse our premium social media growth services for Instagram, TikTok, and YouTube. Followers, likes, views, and engagement from real users.">
+    <meta name="keywords" content="instagram followers, tiktok likes, youtube subscribers, social media growth, buy followers">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://bigstorept.store/products.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Premium Social Media Services - BigStore">
+    <meta property="og:description" content="Grow your social media presence with our premium services">
+    <meta property="og:url" content="https://bigstorept.store/products.html">
+    <meta property="og:site_name" content="BigStore">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://gumroad.com">
+    <link rel="dns-prefetch" href="https://gumroad.com">
+    
+    <!-- Gumroad Overlay Script - Load BEFORE page render -->
+    <script src="https://gumroad.com/js/gumroad.js" async></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0f0f1e;
+            --bg-secondary: #1a1a2e;
+            --accent: #6c63ff;
+            --accent-hover: #5a52d5;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0c8;
+            --card-bg: #16162a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Language Selector */
+        .lang-selector {
+            display: flex;
+            gap: 10px;
+            background: var(--card-bg);
+            padding: 8px 15px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--text-primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .lang-btn.active {
+            background: var(--accent);
+        }
+
+        /* Header */
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(26, 26, 46, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            gap: 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent) 0%, #9d8cff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            padding: 60px 5% 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-header p {
+            font-size: 18px;
+            color: var(--text-secondary);
+        }
+
+        /* Tabs Section */
+        .tabs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: var(--card-bg);
+            border: 2px solid rgba(108, 99, 255, 0.2);
+            color: var(--text-primary);
+            padding: 12px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tab-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .tab-btn:hover::before {
+            left: 100%;
+        }
+
+        .tab-btn:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(108, 99, 255, 0.3);
+        }
+
+        .tab-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            box-shadow: 0 10px 30px rgba(108, 99, 255, 0.4);
+        }
+
+        /* Products Grid */
+        .products-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5% 60px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(108, 99, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .product-card:hover::before {
+            left: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 50px rgba(108, 99, 255, 0.3);
+        }
+
+        .product-platform {
+            display: inline-block;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .platform-instagram {
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .platform-tiktok {
+            background: linear-gradient(135deg, #00f2ea 0%, #ff0050 100%);
+        }
+
+        .platform-youtube {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+        }
+
+        .product-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .product-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            flex-grow: 1;
+            font-size: 14px;
+        }
+
+        .product-details {
+            margin-bottom: 20px;
+        }
+
+        .product-detail-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .product-detail-label {
+            color: var(--text-secondary);
+        }
+
+        .product-detail-value {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .product-price {
+            font-size: 32px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* Gumroad Button Styling */
+        .gumroad-button {
+            display: inline-block !important;
+            width: 100%;
+            background: var(--accent) !important;
+            border: none !important;
+            color: white !important;
+            padding: 14px !important;
+            border-radius: 25px !important;
+            cursor: pointer;
+            font-weight: 600 !important;
+            font-size: 15px !important;
+            text-align: center !important;
+            text-decoration: none !important;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .gumroad-button:hover {
+            background: var(--accent-hover) !important;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(108, 99, 255, 0.4) !important;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 5%;
+            background: var(--card-bg);
+            margin-top: 60px;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+
+            .tabs {
+                gap: 10px;
+            }
+
+            .tab-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            nav {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .lang-selector {
+                padding: 6px 10px;
+            }
+
+            .lang-btn {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo" onclick="window.location.href='/'">BigStore</div>
+            <nav>
+                <a href="/" data-en="Home" data-pt="Início">Home</a>
+                <a href="/products.html" data-en="Products" data-pt="Produtos" style="color: var(--accent)">Products</a>
+                <a href="/contact.html" data-en="Contact" data-pt="Contacto">Contact</a>
+            </nav>
+        </div>
+        <div class="lang-selector">
+            <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" onclick="setLanguage('pt')">PT</button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1 data-en="Our Products" data-pt="Nossos Produtos">Our Products</h1>
+        <p data-en="Choose from our wide range of social media growth services" data-pt="Escolha entre nossa ampla gama de serviços de crescimento nas redes sociais">Choose from our wide range of social media growth services</p>
+    </section>
+
+    <!-- Tabs -->
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="filterProducts('all')" data-en="All Products" data-pt="Todos os Produtos">All Products</button>
+            <button class="tab-btn" onclick="filterProducts('instagram')" data-en="Instagram" data-pt="Instagram">Instagram</button>
+            <button class="tab-btn" onclick="filterProducts('tiktok')" data-en="TikTok" data-pt="TikTok">TikTok</button>
+            <button class="tab-btn" onclick="filterProducts('youtube')" data-en="YouTube" data-pt="YouTube">YouTube</button>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-grid" id="productsGrid">
+            <!-- Instagram Products -->
+            <div class="product-card" data-platform="instagram">
+                <span class="product-platform platform-instagram">Instagram</span>
+                <h3 data-en="Instagram Followers" data-pt="Seguidores Instagram">Instagram Followers</h3>
+                <p data-en="Premium quality followers to boost your profile" data-pt="Seguidores de qualidade premium para impulsionar seu perfil">Premium quality followers to boost your profile</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">1000</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value" data-en="Fast" data-pt="Rápida">Fast</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="High" data-pt="Alta">High</span>
+                    </div>
+                </div>
+                <div class="product-price">$11.99</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/1000-instagram-followers" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+
+            <div class="product-card" data-platform="instagram">
+                <span class="product-platform platform-instagram">Instagram</span>
+                <h3 data-en="Instagram Likes" data-pt="Likes Instagram">Instagram Likes</h3>
+                <p data-en="Instant likes for your posts and reels" data-pt="Likes instantâneos para suas publicações e reels">Instant likes for your posts and reels</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">500</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value" data-en="Fast" data-pt="Rápida">Fast</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="High" data-pt="Alta">High</span>
+                    </div>
+                </div>
+                <div class="product-price">$4.99</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/500-instagram-likes" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+
+            <div class="product-card" data-platform="instagram">
+                <span class="product-platform platform-instagram">Instagram</span>
+                <h3 data-en="Instagram Views" data-pt="Visualizações Instagram">Instagram Views</h3>
+                <p data-en="Boost your video and story views" data-pt="Aumente suas visualizações de vídeos e stories">Boost your video and story views</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">1000</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value" data-en="Fast" data-pt="Rápida">Fast</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="High" data-pt="Alta">High</span>
+                    </div>
+                </div>
+                <div class="product-price">$3.99</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/1000-instagram-views" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+
+            <!-- TikTok Products -->
+            <div class="product-card" data-platform="tiktok">
+                <span class="product-platform platform-tiktok">TikTok</span>
+                <h3 data-en="TikTok Followers" data-pt="Seguidores TikTok">TikTok Followers</h3>
+                <p data-en="Grow your TikTok audience quickly" data-pt="Aumente seu público no TikTok rapidamente">Grow your TikTok audience quickly</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">1000</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value" data-en="Fast" data-pt="Rápida">Fast</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="High" data-pt="Alta">High</span>
+                    </div>
+                </div>
+                <div class="product-price">$7.99</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/1000-tiktok-followers" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+
+            <div class="product-card" data-platform="tiktok">
+                <span class="product-platform platform-tiktok">TikTok</span>
+                <h3 data-en="TikTok Likes" data-pt="Likes TikTok">TikTok Likes</h3>
+                <p data-en="Instant likes to make your videos go viral" data-pt="Likes instantâneos para seus vídeos viralizarem">Instant likes to make your videos go viral</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">1000</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value" data-en="Fast" data-pt="Rápida">Fast</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="Premium" data-pt="Premium">Premium</span>
+                    </div>
+                </div>
+                <div class="product-price">$4.99</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/1000-tiktok-likes" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+
+            <div class="product-card" data-platform="tiktok">
+                <span class="product-platform platform-tiktok">TikTok</span>
+                <h3 data-en="TikTok Views" data-pt="Visualizações TikTok">TikTok Views</h3>
+                <p data-en="Boost your video views and reach" data-pt="Aumente suas visualizações e alcance">Boost your video views and reach</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">1000</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value" data-en="Fast" data-pt="Rápida">Fast</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="High" data-pt="Alta">High</span>
+                    </div>
+                </div>
+                <div class="product-price">$3.49</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/1000-tiktok-views" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+
+            <!-- YouTube Products -->
+            <div class="product-card" data-platform="youtube">
+                <span class="product-platform platform-youtube">YouTube</span>
+                <h3 data-en="YouTube Subscribers" data-pt="Inscritos YouTube">YouTube Subscribers</h3>
+                <p data-en="Grow your channel with real subscribers" data-pt="Aumente seu canal com inscritos reais">Grow your channel with real subscribers</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">1000</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value" data-en="Fast" data-pt="Rápida">Fast</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="Premium" data-pt="Premium">Premium</span>
+                    </div>
+                </div>
+                <div class="product-price">$29.99</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/1000-youtube-subscribers" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+
+            <div class="product-card" data-platform="youtube">
+                <span class="product-platform platform-youtube">YouTube</span>
+                <h3 data-en="YouTube Views" data-pt="Visualizações YouTube">YouTube Views</h3>
+                <p data-en="Real views from active users worldwide" data-pt="Visualizações reais de usuários ativos em todo o mundo">Real views from active users worldwide</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">1000</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value" data-en="Fast" data-pt="Rápida">Fast</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="Premium" data-pt="Premium">Premium</span>
+                    </div>
+                </div>
+                <div class="product-price">$9.99</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/1000-youtube-views" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+
+            <div class="product-card" data-platform="youtube">
+                <span class="product-platform platform-youtube">YouTube</span>
+                <h3 data-en="YouTube Likes" data-pt="Likes YouTube">YouTube Likes</h3>
+                <p data-en="Boost your video engagement" data-pt="Aumente o engagement dos seus vídeos">Boost your video engagement</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">500</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value" data-en="Fast" data-pt="Rápida">Fast</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="High" data-pt="Alta">High</span>
+                    </div>
+                </div>
+                <div class="product-price">$5.99</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/500-youtube-likes" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+
+            <div class="product-card" data-platform="youtube">
+                <span class="product-platform platform-youtube">YouTube</span>
+                <h3 data-en="YouTube Comment Likes" data-pt="Likes Comentários YouTube">YouTube Comment Likes</h3>
+                <p data-en="Quality likes on comments from real accounts" data-pt="Likes de qualidade em comentários de contas reais">Quality likes on comments from real accounts</p>
+                <div class="product-details">
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Amount:" data-pt="Quantidade:">Amount:</span>
+                        <span class="product-detail-value">500</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Delivery:" data-pt="Entrega:">Delivery:</span>
+                        <span class="product-detail-value">24-48h</span>
+                    </div>
+                    <div class="product-detail-item">
+                        <span class="product-detail-label" data-en="Quality:" data-pt="Qualidade:">Quality:</span>
+                        <span class="product-detail-value" data-en="Premium" data-pt="Premium">Premium</span>
+                    </div>
+                </div>
+                <div class="product-price">$4.99</div>
+                <a class="gumroad-button" href="https://bigstorept.gumroad.com/l/500-youtube-comment-likes" target="_blank" data-gumroad-single-product="true">
+                    <span data-en="Order Now" data-pt="Encomendar Agora">Order Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 BigStore. <span data-en="All rights reserved." data-pt="Todos os direitos reservados.">All rights reserved.</span></p>
+    </footer>
+
+    <script>
+        let currentLang = 'en';
+        let currentFilter = 'all';
+
+        // Set language
+        function setLanguage(lang) {
+            currentLang = lang;
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update all translatable elements
+            document.querySelectorAll('[data-en]').forEach(element => {
+                const translation = element.getAttribute(`data-${lang}`);
+                if (translation) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = translation;
+                    } else {
+                        element.textContent = translation;
+                    }
+                }
+            });
+        }
+
+        // Filter products by platform
+        function filterProducts(platform) {
+            currentFilter = platform;
+            
+            // Update tab states
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Filter products with animation
+            const cards = document.querySelectorAll('.product-card');
+            const grid = document.getElementById('productsGrid');
+
+            // Fade out
+            grid.style.opacity = '0';
+            
+            setTimeout(() => {
+                cards.forEach(card => {
+                    const cardPlatform = card.getAttribute('data-platform');
+                    if (platform === 'all' || cardPlatform === platform) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Fade in
+                grid.style.opacity = '1';
+            }, 200);
+        }
+
+        // Initialize Gumroad overlay when script loads
+        window.addEventListener('load', function() {
+            // This ensures the Gumroad script is fully loaded before any interactions
+            if (typeof window.GumroadOverlay !== 'undefined') {
+                console.log('Gumroad overlay initialized successfully');
+            } else {
+                console.warn('Gumroad overlay not available - using direct links');
+            }
+        });
+
+        // Detect user's browser language and set it automatically
+        document.addEventListener('DOMContentLoaded', function() {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.toLowerCase().startsWith('pt')) {
+                const ptButton = document.querySelector('.lang-btn:last-child');
+                if (ptButton) {
+                    ptButton.click();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

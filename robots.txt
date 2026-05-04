@@ -1,0 +1,23 @@
+# BigStore - Robots.txt
+# Permite que todos os motores de busca indexem o site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bigstorept.store/sitemap.xml
+
+# Otimização para Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Otimização para Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Bloquear acesso a arquivos desnecessários
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.log$
